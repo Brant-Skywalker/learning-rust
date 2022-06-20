@@ -39,6 +39,4 @@ fn main() {
     /// We are not allowed to mutate a variable's type.
     // let mut spaces = "   ";
     // spaces = spaces.len();  // Compiler error!
-
-
 }
