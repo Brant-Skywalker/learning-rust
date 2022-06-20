@@ -11,6 +11,7 @@ fn main() {
     println!("The value of x is: {}", x);
 
     /// **Constants**
+    ///
     /// We are not allowed to use `mut` with constants. Constants can be declared using the `const`
     /// keyword instead of the `let` keyword, and the type of the value *must* be annotated.
     /// NOTE: Constants may be set only to a constant expression, not the result of a value
@@ -21,10 +22,11 @@ fn main() {
     /// declared in**.
 
     /// **Shadowing**
+    ///
     /// We can shadow a variable by using the same variable's name and repeating the use of the
     /// `let` keyword.
-    let x = 5;      // Shadowed!
-    let x = x + 1;  // Shadowed!
+    let x = 5; // Shadowed!
+    let x = x + 1; // Shadowed!
     {
         let x = x * 2;
         println!("The value of x in the inner scope is: {}", x);
@@ -33,10 +35,10 @@ fn main() {
 
     /// We are effectively creating a new variable. When we use the `let` keyword again,
     /// we can change the type of the value but reuse the same name.
-    let spaces = "   ";   // String type.
-    let spaces = spaces.len();  // Number type.
+    let spaces = "   "; // String type.
+    let spaces = spaces.len(); // Number type.
 
     /// We are not allowed to mutate a variable's type.
     // let mut spaces = "   ";
-    // spaces = spaces.len();  // Compiler error!
+    // spaces = spaces.len(); // Compiler error!
 }
