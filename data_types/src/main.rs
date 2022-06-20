@@ -7,10 +7,12 @@ fn main() {
     let guess: u32 = "42".parse().expect("Not a number");
 
     /// ## Scalar Types
+    ///
     /// A scalar type represents a single value. Rust has four primary scalar types: integers,
     /// floating-point numbers, Booleans, and characters.
 
     /// ### Integer Types
+    ///
     /// An integer is a number without a fractional component. Unsigned integer types start
     /// with `u`, and signed integer types start with `i`. Stored in 2's complement representation.
     /// Additionally, the `isize` and `usize` types depend on the architecture of the computer the
@@ -28,12 +30,14 @@ fn main() {
     /// * Saturate at the value's minimum or maximum values with `saturating_*` methods.
 
     /// ### Floating-Point Types
+    ///
     /// Rust's two floating-point types are `f32` and `f64`, which are 32 bits and 64 bits in size,
     /// respectively. **The default type is `f64`.**
     let x = 2.0; // f64. Represented according to the IEEE-754 standard.
     let y: f32 = 3.0; // f32.
 
     /// ### Numeric Operations
+    ///
     // addition
     let sum = 5 + 10;
 
@@ -65,10 +69,12 @@ fn main() {
     /// Unicode Scalar Values range from `U+0000` to `U+D7FF` and `U+E000` to `U+10FFFF` inclusive.
 
     /// ### Compound Types
+    ///
     /// *Compound types can group multiple values into one type. Rust has two primitive compound
     /// types: tuples and arrays.
 
     /// **The Tuple Type**
+    ///
     /// A tuple is a general way of grouping together a number of values **with a variety of
     /// types** into one compound type. Tuples have a fixed length: once declared, they cannot grow
     /// or shrink in size.
@@ -90,6 +96,7 @@ fn main() {
     /// Expressions implicitly return the unit type if they don't return any other value.
 
     /// **The Array Type**
+    ///
     /// Unlike a tuple, every element of an array must have the same size.
     /// Arrays in Rust have a fixed length.
     let a = [1, 2, 3, 4, 5];
