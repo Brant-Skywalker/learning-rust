@@ -173,4 +173,5 @@ fn main() {
     /// reference to that data, but the borrowing rules don't guarantee that.
     /// Therefore, Rust cannot make the assumption that converting an immutable reference to a
     /// mutable reference is possible.
+    ()
 }
