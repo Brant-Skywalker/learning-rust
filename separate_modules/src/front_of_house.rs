@@ -1,0 +1,1 @@
+pub pub mod hosting;  // Next we extract the `hosting` module to its own file as well.
