@@ -83,7 +83,7 @@ fn main() {
     /// When we use trait objects, Rust must use dynamic dispatch. The compiler doesn't know all the
     /// types that might be used with the code that is using trait objects, so it doesn't know which
     /// method implemented on which type to call. Instead, at runtime, Rust uses the pointers inside
-    /// the trait object to know which method to call. THere is a runtime cost when this lookup
+    /// the trait object to know which method to call. There is a runtime cost when this lookup
     /// happens that doesn't occur with static dispatch. Dynamic dispatch also prevents the compiler
     /// from choosing to inline a method's code, which in turn prevents some optimizations. However,
     /// we did get extra flexibility, so it's a trade-off to consider.
